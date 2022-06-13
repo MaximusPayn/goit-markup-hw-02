@@ -9,8 +9,8 @@
 .body {
     font-family: "Roboto Regular", "Roboto Bold", "Roboto Medium", "Roboto Black", "Oleo Script", sans-serif;
     background-color: #E5E5E5;
-    font-style:normal
-    color: var (--title-text-color)
+    font-style: normal;
+    color: var(--title-text-color)
 }
 
 .list {
@@ -27,10 +27,14 @@
 .button-hero:hover,
 .button-hero:focus {
     color: var(--accent-color)
+}
+
+
 
 .button-nav {
     color: var(--bg-color);
     background-color: var(--accent-color);
+
 }
 
 .button-nav:hover,
