@@ -4,11 +4,13 @@
  --accent-color: #2196F3;
  --bg-color: #FFFFFF;
  --secondary-bg-color: #2F303A; 
+ --third-bg-color: #F5F4FA;
+ --primary-color: #188CE8;
 }
 
-.body {
-    font-family: "Roboto Regular", "Roboto Bold", "Roboto Medium", "Roboto Black", "Oleo Script", sans-serif;
-    background-color: #E5E5E5;
+body {
+    font-family: "Roboto Regular", sans-serif;
+    background-color: var(--bg-color);
     font-style: normal;
     color: var(--title-text-color)
 }
@@ -22,34 +24,47 @@
 .button-hero {
     color: var(--bg-color);
     background-color: var(--accent-color);
+    font-size: 16px;
 }
 
 .button-hero:hover,
 .button-hero:focus {
-    color: var(--accent-color)
+    color: var(--bg-color);
 }
 
-
-
 .button-nav {
+    font-family: inherit;
     color: var(--bg-color);
     background-color: var(--accent-color);
-
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .button-nav:hover,
 .button-nav:focus {
-    color: var(--accent-color);
+    color: var(--bg-color);
 }
 
 .btn {
+    font-family: inherit;
     color: var(--title-text-color);
-    background-attachment: #F5F4FA;
+    background-color: var(--third-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--bg-color);
+    background-color: var(--accent-color);
 }
 
 .section-title {
-    color: var(--title-text-color);
-    
+    color: var(--title-text-color);    
+}
+
+a {
+    text-decoration: none;
 }
 
 /* WebStudio */
@@ -58,14 +73,10 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .logo-text{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
     color: var(--title-text-color)
 
 }
@@ -78,9 +89,9 @@
 
 .text-about {
     font-family: 'Roboto';
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 0.74;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
     text-align: center;
     text-transform: uppercase;
     color: var(--bg-color);
@@ -90,32 +101,29 @@
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
-    line-height: 0.87;
+    line-height: 1.15;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
 }
 
 .text-descreption {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 14px;
-    line-height: 0.58;
+    line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 .work-text {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
-    line-height: 0.85;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
 .footer-logo-text {
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -127,7 +135,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height: 0.8;
+    line-height: 1.14;
     color: var(--title-text-color)
 }
 
@@ -157,7 +165,7 @@
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
-    line-height: 0.85;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
@@ -166,7 +174,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 0.84;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -176,9 +184,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 0.84;
+    line-height: 1.18;
     text-align: center;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 /* Footer */
@@ -220,14 +228,12 @@
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
-    line-height: 0.5;
+    line-height: 2;
     color: var(--title-text-color);
 }
 
 .description {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
-    line-height: 0.44;
+    line-height: 1.9;
     color: var(--primary-text-color);
 }
