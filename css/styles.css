@@ -24,12 +24,15 @@ body {
 .button-hero {
     color: var(--bg-color);
     background-color: var(--accent-color);
+    font-weight: 700;
     font-size: 16px;
+
 }
 
 .button-hero:hover,
 .button-hero:focus {
     color: var(--bg-color);
+    background-color: var(--primary-color);
 }
 
 .button-nav {
@@ -90,7 +93,7 @@ a {
 .text-about {
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 16px;
+    font-size: 44px;
     line-height: 1.9;
     text-align: center;
     text-transform: uppercase;
